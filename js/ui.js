@@ -18,8 +18,8 @@ class UI {
     this.desc.textContent = weather.weather[0].main;
     this.string.textContent = weather.main.temp + "℉";
     this.icon.setAttribute('src', `https://openweathermap.org/img/w/${weather.weather[0].icon}.png`);
-    this.humidity.textContent = `Humidity: ${weather.main.humidity} %`;
-    this.cloudiness.textContent = `Cloudiness: ${weather.clouds.all} %`;
+    this.humidity.textContent = `Humidity: ${weather.main.humidity}%`;
+    this.cloudiness.textContent = `Cloudiness: ${weather.clouds.all}%`;
     this.wind.textContent = `Wind: ${weather.wind.speed} mph`;
     this.minimum.textContent = `Minimum Temperature: ${weather.main.temp_min} ℉`;
     this.maximum.textContent = `Maximum Temperature: ${weather.main.temp_max} ℉`;
